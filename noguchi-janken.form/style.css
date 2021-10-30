@@ -93,9 +93,20 @@ h2 {
 	 height: 1vh;
 	 width: 90vw;
 	 padding: 0.5em 1em;
-    
-    
  }
+.fifth-visual {
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 25px 10px;
+	width: 90vw;
+    background: #FFF;
+    border: solid 3px #4374b4;
+
+}
+.font-size {
+   font-size: 15px;
+   font-family: "MS Pゴシック",sans-serif, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .sp-nav {
    display: none;
