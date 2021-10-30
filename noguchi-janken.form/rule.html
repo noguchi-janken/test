@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>野口じゃんけん</title>
+   <link rel = "icon" href = "images/野口じゃんけん.png" 
+        type = "image/x-icon">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="janken.css">
+
+   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+   <script>
+   $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click', function(){
+         nav.toggleClass('toggle');
+      });
+   });
+   </script>
+</head>
+<body>
+   <header>
+	<img width=40 height=40 src="images/noguchi-janken-logo.png">
+      <h1>
+         <a href="https://noguchi-janken.github.io/index.html">野口じゃんけん</a>
+      </h1>
+      <nav class="pc-nav">
+         <ul>
+            <li><a href="#">ルール</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">情報</a></li>
+            <li><a href="#">CONTACT</a></li>
+         </ul>
+      </nav>
+      <nav class="sp-nav">
+         <ul>
+            <li><a href="#">ルール</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li class="close"><span>閉じる</span></li>
+         </ul>
+      </nav>
+      <div id="hamburger">
+         <span></span>
+      </div>
+   </header>
+<body>
+	<div class="first-visual">こんにちは</div>
+   <div class="fifth-visual">
+      <h1>
+         ルール
+      </h1>
+      <br>
+      <div class="font-size">
+         グー、チョキ、パーの下のいずれかの手を選択して、野口と勝敗を決めます。先に<b>5回</b>勝った方の優勝となります。<br><br>
+         <input type="image" width=150 height=60 src="file:///C:/Users/s2202425/Documents/noguch_janken/images/janken-rule1.png"><br><br>
+         あなたが<b>グー</b>を出した場合、野口に<b>チョキ</b>で勝ち、<b>パー</b>で負け、<b>グー</b>であいことなります。<br><br>
+         あなたが<b>チョキ</b>を出した場合、野口に<b>パー</b>で勝ち、<b>グー</b>で負け、<b>チョキ</b>であいことなります。<br><br>
+         あなたが<b>パー</b>を出した場合、野口に<b></b>グーで勝ち、<b>チョキ</b>で負け、<b>パー</b>であいことなります。<br><br>
+         いわゆる、三竦み
+      </div>
+   </div>
+   <br>
+   
+
+
+   <footer id="footer">
+	<p><small>Copyright © 2021 野口じゃんけん All Rights Reserved.</small></p>
+	</footer>
+
+</body>
+</html>
