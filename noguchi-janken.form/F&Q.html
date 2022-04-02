@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>野口じゃんけん</title>
+   <link rel = "icon" href = "images/野口じゃんけん.png" 
+        type = "image/x-icon">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+   <script>
+   $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click', function(){
+         nav.toggleClass('toggle');
+      });
+   });
+   </script>
+</head>
+<body>
+   <header>
+	<img width=40 height=40 src="images/noguchi-janken-logo.png">
+      <h1>
+         <a href="https://noguchi-janken.github.io/index.html">野口じゃんけん</a>
+      </h1>
+      <nav class="pc-nav">
+         <ul>
+            <li><a href="https://noguchi-janken.github.io/test/noguchi-janken.form/rule.html">ルール</a></li>
+            <li><a href="#">よくあるご質問(FAQ)</a></li>
+            <li><a href="https://noguchi-janken.github.io/test/noguchi-janken.form/form.html">お問い合わせ</a></li>
+         </ul>
+      </nav>
+      <nav class="sp-nav">
+         <ul>
+            <li><a href="https://noguchi-janken.github.io/test/noguchi-janken.form/rule.html">ルール</a></li>
+            <li><a href="#">よくあるご質問(FAQ)</a></li>
+            <li><a href="https://noguchi-janken.github.io/test/noguchi-janken.form/form.html">お問い合わせ</a></li>
+            <li class="close"><span>閉じる</span></li>
+         </ul>
+      </nav>
+      <div id="hamburger">
+         <span></span>
+      </div>
+   </header>
+<body>
+	<div class="first-visual">こんにちは</div>
+   <div class="fifth-visual">
+      <h1>
+         よくあるご質問(FAQ)
+      </h1>
+      </div>
+      <br>
+      <div class="fifth-visual">
+      <h3>Q.野口じゃんけんはどのように使いますか？<br><br>A.右上の3本線(ハンバーガーメニュー)の「ルール」よりご確認下さい。</h3>
+      </div>
+   <br>
+   <div class="fifth-visual">
+      <h3>Q.野口じゃんけんの質問はどのようにしますか？<br><br>A.右上の3本線(ハンバーガーメニュー)の「お問い合わせ」よりご確認下さい。お名前、電話番号、メールアドレス、お問い合わせ内容、個人情報同意をチェックしていただいて、完了となります。</h3>
+      </div>
+   <br>
+
+
+   <footer id="footer">
+	<p><small>Copyright © 2021 野口じゃんけん All Rights Reserved.</small></p>
+	</footer>
+<h1>Web Share API Sample</h1>
+    <button id="share">シェア</button>
+    <script type="text/javascript">
+      (function(){
+        function share() {
+          if (navigator.share) {
+            navigator.share({
+              title: 'アクトインディ開発者ブログ',
+              text: '子供とお出かけ情報「いこーよ」を運営する、アクトインディ株式会社のエンジニアブログです',
+              url: 'https://tech.actindi.net/',
+            })
+            .then(() => {
+              // シェアしたら実行される
+              console.log('Successful share');
+            })
+            .catch((error) => {
+              // シェアせず終了した場合もここに入ってくる。
+              console.log('Error sharing', error));
+            };
+          } else {
+            alert('Web Share API is not supported!!');
+            // Web Share API未対応ブラウザ向けのフォールバックを実装する。
+          }
+        }
+        document.querySelector('#share').addEventListener('click', share);
+      })();
+    </script>
+</body>
+</html>
