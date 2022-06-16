@@ -67,32 +67,5 @@
    <footer id="footer">
 	<p><small>Copyright © 2021 野口じゃんけん All Rights Reserved.</small></p>
 	</footer>
-<h1>Web Share API Sample</h1>
-    <button id="share">シェア</button>
-    <script type="text/javascript">
-      (function(){
-        function share() {
-          if (navigator.share) {
-            navigator.share({
-              title: 'アクトインディ開発者ブログ',
-              text: '子供とお出かけ情報「いこーよ」を運営する、アクトインディ株式会社のエンジニアブログです',
-              url: 'https://tech.actindi.net/',
-            })
-            .then(() => {
-              // シェアしたら実行される
-              console.log('Successful share');
-            })
-            .catch((error) => {
-              // シェアせず終了した場合もここに入ってくる。
-              console.log('Error sharing', error));
-            };
-          } else {
-            alert('Web Share API is not supported!!');
-            // Web Share API未対応ブラウザ向けのフォールバックを実装する。
-          }
-        }
-        document.querySelector('#share').addEventListener('click', share);
-      })();
-    </script>
 </body>
 </html>
